@@ -1,0 +1,8 @@
+Model: x[k]=0.55x[k-1]+18x[k-1]/(1+x[k-1]^2)+7cos(0.7k)+w, y=x^2/15+v
+q=1.0, r=0.01, runs=30, steps=60, particles=200, seed=2026
+Method          RMSE mean     RMSE std      Time(s)     Mean ESS
+KF                59.4918       4.3667       0.0001          nan
+EKF               19.0014      11.2644       0.0002          nan
+UKF                8.6400       0.2203       0.0013          nan
+BPF                1.1972       1.2574       0.0029        37.42
+AGCR-PF            1.3230       1.3146       0.0252        38.05
